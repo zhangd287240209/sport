@@ -219,8 +219,8 @@ Page({
         ["productSelect.store_name"]:storeInfo.store_name,
         ["productSelect.image"]: storeInfo.image,
         ["productSelect.price"]: storeInfo.price,
-        ["productSelect.stock"]: this.data.productValue.length ? 0 : storeInfo.stock ,
-        ['productSelect.unique']:  '',
+        ["productSelect.stock"]: storeInfo.stock,
+        ['productSelect.unique']: storeInfo.unique || '',
         ['productSelect.cart_num']: 1,
         attrValue: '',
         attr: '请选择'
@@ -458,12 +458,6 @@ Page({
     var that = this;
     that.setData({ canvasStatus: true });
     var arr2 = [that.data.posterbackgd, that.data.storeImage, that.data.PromotionCode];
-    wx.getImageInfo({
-      src: that.data.PromotionCode,
-      fail: function (res) {
-        return app.Tips({ 'title': '小程序二维码需要发布正式版后才能获取到' });
-      },
-    });
     if (arr2[2] == ''){
       //海报二维码不存在则从新下载
       that.downloadFilePromotionCode(function (msgPromotionCode){

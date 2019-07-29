@@ -47,7 +47,6 @@ Page({
   },
   getCidArticle: function () {
     var that = this;
-    if (that.data.status) return ;
     var limit = that.data.limit;
     var first = that.data.first;
     var articleList = that.data.articleList;
@@ -117,7 +116,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    this.getCidArticle();
+
   },
 
   /**

@@ -37,6 +37,15 @@ Page({
   onLoad: function (options) {
     if (options.spid) app.globalData.spid = options.spid;
     if (options.scene) app.globalData.code = decodeURIComponent(options.scene);
+    var that=this;
+    wx.getSetting({
+      success(res) {
+        if (!res.authSetting['scope.userInfo']) {
+          that.setData({ window: true });
+        }
+      }
+    });
+
   },
   catchTouchMove: function (res) {
     return false
@@ -86,15 +95,6 @@ Page({
         benefit: res.data.benefit,
         logoUrl: res.data.logoUrl,
         couponList: res.data.couponList,
-      });
-      wx.getSetting({
-        success(res) {
-          if (!res.authSetting['scope.userInfo']) {
-            that.setData({ window: that.data.couponList.length ? true : false});
-          }else{
-            that.setData({ window: false });
-          }
-        }
       });
     });
   },

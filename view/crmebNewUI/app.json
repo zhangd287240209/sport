@@ -4,6 +4,7 @@
     "pages/goods_cate/goods_cate",
     "pages/quality-recommend/index",
     "pages/order_details/index",
+    "pages/test/index",
     "pages/user_sgin/index",
     "pages/user/user",
     "pages/user_get_coupon/index",
@@ -24,6 +25,7 @@
     "pages/user_sgin_list/index",
     "pages/order_list/index",
     "pages/goods_details/index",
+    "pages/my_course/index",
     "pages/news_details/index",
     "pages/promoter-list/index",
     "pages/promoter-order/index",
@@ -57,23 +59,18 @@
     "components/product-window/index",
     "components/coupon-list-window/index",
     "components/address-window/index",
-    "components/home/index"
+    "components/home/index",
+    "pages/add_course/add_course",
+    "pages/action/index",
+    "components/weight/index"
   ],
   "subPackages": [
     {
       "root": "pages/activity",
       "name": "activity",
       "pages": [
-        "goods_combination/index",
-        "goods_combination_details/index",
-        "goods_combination_status/index",
         "goods_seckill_details/index",
-        "goods_seckill/index",
-        "goods_bargain_details/index",
-        "goods_bargain/index",
-        "poster-poster/index",
-        "user_goods_bargain_list/index",
-        "goods_combination_rule/index"
+        "goods_seckill/index"
       ]
     }
   ],

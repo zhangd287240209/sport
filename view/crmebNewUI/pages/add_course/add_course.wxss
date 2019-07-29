@@ -1,0 +1,160 @@
+/* pages/add_course/add_course.wxss */
+.container{
+  background: white;
+  height:100%;
+}
+
+.form{
+  border-top: 1px solid #eee;
+}
+
+.inner_input{
+  border-bottom: 1px solid rgba(124, 116, 116, 0.808);
+  width: 95%;
+  padding: 10rpx;
+  margin-left: 10rpx;
+}
+
+.bnt{
+    width:90%;
+    margin:0px auto;
+    color:#fff;
+    font-size:28rpx;
+    margin-top:50rpx;
+  }
+
+  .button{
+    width: 100%;
+    display: flex;
+    flex: row;
+    margin-top:4px;
+    justify-content: center;
+  }
+
+  .import{
+    border-radius:100rpx 50px 50px 100rpx;
+    background-image: linear-gradient(to right,#dd1010 0%,red 100%);
+    margin: 5px;
+    padding:10rpx;
+    width: 80%;
+    color: white;
+    font-size: 15px;
+    font-family: 黑体;
+  }
+
+  .txt{
+    font-size: 13px;
+    line-height: 13px;
+    font-family: 黑体;
+  }
+
+  .content{
+    height:80%;
+  }
+
+  .keepBnt{
+  background: red;
+  width:80%;
+  height:86rpx;
+  border-radius:50rpx;
+  text-align:center;
+  line-height:86rpx;
+  margin:50rpx auto;
+  font-size:38rpx;
+  color:#fff;
+  font-family:黑体;
+  margin-top:-40rpx;
+  }
+
+.header{
+  font-size: 13px;
+  margin-left:10rpx;
+}
+
+.title{
+  border-bottom: 1px solid #eee;
+  padding:20rpx;
+  display:flex;
+  justify-content:space-between;
+}
+
+.actionname{
+  color: black;
+  font-size: 15px;
+  font-family: 黑体;
+  margin-left:-5px;
+
+}
+
+.partname{
+  margin-left:20rpx;
+  font-size:12px;
+
+}
+
+.item{
+  font-size:15px;
+  margin:12px auto;
+  display:flex;
+}
+
+.weight picker{
+ margin-right: 10rpx;
+}
+
+.num picker{
+ margin-right: 10rpx;
+}
+
+.pic{
+  position: absolute;
+}
+
+.reduce{
+ width:20%;
+background: rgba(124, 116, 116, 0.808);
+margin-right:80rpx;
+padding-left:15rpx;
+border-radius:50%;
+
+}
+
+.plus{
+background: rgba(124, 116, 116, 0.808);
+width:20%;
+padding-left:10rpx;
+border-radius:50%;
+padding-bottom:5rpx
+}
+
+.btn{
+  position: relative;
+  margin-right:-30rpx;
+  color:white;
+  width:200rpx;
+  display:flex;
+  font-weight:900;
+}
+
+.no{
+  margin-right:200rpx;
+  margin-left:15rpx;
+}
+
+.weight{
+ border-bottom:1px solid #eee;
+ display:flex;
+ margin-left:20px;
+}
+
+.num{
+  margin-left:220rpx;
+  border-bottom:1px solid #eee;
+  display:flex;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}

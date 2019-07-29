@@ -1,0 +1,43 @@
+<!--pages/add_course/add_course.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class='container'>
+  <form bindsubmit='save'class="form">
+      <input type='text' class='inner_input' name='coursename' placeholder='请输入名称' bindinput='searchInput' value='{{content.name}}'></input>
+      <view class='button'>
+        <button class='import'>导入备课</button>
+        <button class='import' bindtap='addaction'>添加动作</button>
+      </view>
+      <scroll-view class='content' scroll-y='true'>
+        <view class='header'>训练内容</view>
+        <view wx:for="{{content.action}}" wx:for-item="actionitem" wx:for-index="actionindex">
+          <view class='title' id='{{item.pid}}'>
+              <view> 
+                <text class='actionname'>{{actionitem.name}}</text>
+                <text class='partname'>{{actionitem.part}}</text>
+              </view>
+              <view class='btn'>
+                <view class='reduce' bindtap='reduce' data-index="{{actionindex}}" data-num="{{actionitem.frequency}}"><text>-</text></view>
+                <view class='plus' bindtap='plus' data-index="{{actionindex}}" data-num="{{actionitem.frequency}}"><text>+</text></view>
+              </view>
+          </view>
+           <!-- 详细的组数和质量信息-->
+           <view class='item' wx:for="{{actionitem.item}}">
+            <text class='no'>No.{{index+1}}</text>
+            <!-- <text class='weight' bindtap='changeweight'>{{item.weight}} kg</text> -->
+            <view class='weight'>
+              <picker bindchange="bindPickerChange" value="{{item.weight}}" range="{{array}}" data-index="{{index}}" data-icount="{{actionindex}}">
+              <view>{{item.weight}}</view></picker>kg
+            </view>
+
+            <!-- <text class='num' bindtap='changenum'>{{item.num}} rep</text> -->
+            <view class='num'>
+              <picker bindchange="bindPickerChangenum" value="{{item.num}}" range="{{array}}" data-index="{{index}}" data-icount="{{actionindex}}">
+              <view>{{item.num}}</view></picker>rep
+            </view>
+           </view>
+        </view>
+      </scroll-view>
+      <view class='bnt'><button class='keepBnt' form-type='submit'>立即保存</button></view>
+  </form>
+</view>
+

@@ -357,7 +357,6 @@ Page({
           break;
         case 'SUCCESS':
             wx.hideLoading();
-          if (that.data.BargainId || that.data.combinationId || that.data.pinkId || that.data.seckillId) return app.Tips({ title: res.msg, icon: 'success' }, { tab: 4, url: goPages });
             return app.Tips({ title: res.msg,icon: 'success' }, { tab: 5, url: goPages });
           break;
         case 'WECHAT_PAY':
@@ -370,7 +369,6 @@ Page({
             paySign: jsConfig.paySign,
             success: function (res) {
               wx.hideLoading();
-              if (that.data.BargainId || that.data.combinationId || that.data.pinkId || that.data.seckillId) return app.Tips({ title: '支付成功', icon: 'success' }, { tab: 4, url: goPages });
               return app.Tips({ title: '支付成功', icon:'success' }, { tab: 5, url: goPages });
             },
             fail:function(e){

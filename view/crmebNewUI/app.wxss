@@ -9,7 +9,7 @@
 .start.star2{background-position: 0 -105rpx;}
 .start.star1{background-position: 0 -140rpx;}
 .start.star0{background-position: 0 -175rpx;}
-page{font-size:28rpx;background-color: #f5f5f5; color: #333;}
+page{font-size:28rpx;background-color: #f5f5f5; color: #333; height: 100%}
 view{box-sizing:border-box;}
 .acea-row{display:flex;flex-wrap:wrap;}
 .acea-row.row-top{align-items:flex-start;}

@@ -13,6 +13,7 @@ Component({
   },
   data: {
     cloneIner: null,
+    url: app.globalData.url,
     loading:false,
   },
   pageLifetimes: {

@@ -1,0 +1,22 @@
+<view class='container'>
+  <navbar parameter='{{parameter}}'></navbar>
+  <view class='searchGood'>
+    <view class='search acea-row row-between-wrapper'>
+        <view class='input acea-row row-between-wrapper'>
+          <text class='iconfont icon-sousuo2'></text>
+          <input type='text' value='{{searchValue}}' focus="{{focus}}" placeholder='点击搜索动作' placeholder-class='placeholder' bindblur='setValue'></input>
+        </view>
+        <view class='searchtxt' bindtap='searchBut'>搜索</view>
+    </view>
+  </view>
+  <view class='btn'>
+    <view class='joinCart' bindtap='addcourse'>新增备课</view>
+  </view>
+  <view class='content'>
+    <view class='content-item' wx:for="{{contentitems}}">
+      <image src='../../images/book.png'></image>
+      <view class='navitor'><image src='../../images/search.png'></image></view>
+    </view>
+  </view>
+</view>
+

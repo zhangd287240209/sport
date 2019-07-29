@@ -3,7 +3,7 @@ Component({
   properties: {
     window:{
       type: Boolean,
-      value: false,
+      value: true,
     },
     couponList:{
       type:Array,

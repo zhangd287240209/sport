@@ -4,27 +4,20 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"nodeModules": true,
-		"autoAudits": false,
+		"autoAudits": true,
 		"uglifyFileName": true,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
+		"checkInvalidKey": true
 	},
-	"compileType": "miniprogram",
-	"libVersion": "2.7.0",
-	"appid": "wx6ca9ac1a01f617a1",
-	"projectname": "crmeb%E6%96%B0%E5%95%86%E5%9F%8E",
+	"compileType": "plugin",
+	"libVersion": "2.6.4",
+	"appid": "wxec599386699aec33",
+	"projectname": "crmebNewUI",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

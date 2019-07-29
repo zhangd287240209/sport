@@ -1,0 +1,90 @@
+page{background-color:#fff!important;}
+.searchGood .search{padding-left:30rpx;}
+.searchGood .search{margin-top:20rpx;}
+.searchGood .search .input{width:598rpx;background-color:#f7f7f7;border-radius:33rpx;padding:0 35rpx;box-sizing:border-box;height:66rpx;}
+.searchGood .search .input input{width:472rpx;font-size:28rpx;}
+.searchGood .search .input .placeholder{color:#bbb;}
+.searchGood .search .input .iconfont{color:#000;font-size:35rpx;}
+.searchGood .search .bnt{width:120rpx;text-align:center;height:66rpx;line-height:66rpx;font-size:30rpx;color:#282828;}
+.searchGood .title{font-size:28rpx;color:#999;margin:50rpx 30rpx 25rpx 30rpx;}
+.searchGood .list{padding-left:10rpx;}
+.searchGood .list .item{font-size:26rpx;color:#454545;padding:0 21rpx;height:60rpx;border-radius:3rpx;line-height:60rpx;border:1rpx solid #aaa;margin:0 0 20rpx 20rpx;}
+.searchGood .line{border-bottom:1rpx solid #eee;margin:20rpx 30rpx 0 30rpx;}
+
+.header{
+  display: flex;
+  flex: row;
+}
+
+.headeritem{
+  width: 100rpx;
+  height: 70rpx;
+  margin-bottom:20rpx;
+  padding-left:5rpx;
+  padding-top:40rpx;
+  font-size: 12px;
+  font-family:黑体;
+}
+
+.container{
+ height: 100%;
+}
+
+.action-content{
+  height: 60%;
+}
+
+.title{
+  height: 50rpx;
+  background: #f7f7f7;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  font-family:sans-serif;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkbox-item{
+  margin: 10rpx;
+  border-bottom:1px solid #eee;
+  padding-bottom:10rpx;
+  position: relative;
+} 
+
+.is_checked{
+  color: red;
+}
+
+.navitor{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right:2rpx;
+  bottom:-50rpx;
+  font-size: 15px;
+  font-family: 宋体;
+}
+
+.nonavitor{
+  display: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.keepBnt{
+  background: red;
+  width:80%;
+  height:86rpx;
+  border-radius:50rpx;
+  text-align:center;
+  line-height:86rpx;
+  margin:100rpx auto;
+  font-size:32rpx;
+  color:#fff;
+  }

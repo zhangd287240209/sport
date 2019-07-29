@@ -47,8 +47,7 @@
             <view class='text acea-row row-between'>
                 <view class='name line2'>{{item.productInfo.store_name}}</view>
                 <view class='money'>
-                  <view wx:if="{{item.productInfo.attrInfo}}">￥{{item.productInfo.attrInfo.price}}</view>
-                  <view wx:else>￥{{item.productInfo.price}}</view>
+                  <view>￥{{item.productInfo.price}}</view>
                   <view>x{{item.cart_num}}</view>
                 </view>
             </view>
