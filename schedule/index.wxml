@@ -1,0 +1,125 @@
+<!--pages/schedule/index.wxml-->
+<view class='container'>
+    <navbar parameter='{{parameter}}'></navbar>
+    <view>今天  <label class="today">{{today}}</label></view>
+    <view class="text">
+      <view><text>4节</text></view>
+      <view><text>5节</text></view>
+    </view>
+    <view class="process"> 
+        <progress percent="80" backgroundColor="blue" activeColor="red">
+        </progress>
+    </view>
+    <view class='bnt'><button class='keepBnt' form-type='submit'>添加课程 </button></view>
+    <view class="thisWeek">本周  <label class="today">{{thisWeek}}</label></view>
+    <view class="textWeek">
+      <view><text>4节</text></view>
+      <view><text>5节</text></view>
+    </view>
+    <view class="processWeek"> 
+        <progress percent="80" backgroundColor="blue" activeColor="red">
+        </progress>
+    </view>
+<swiper bindchange="itemChange" circular="true">
+    <swiper-item>
+    
+        <view class="cander">
+    <view class="candertop">
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weeks}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weekdays}}" wx:for-item="item" wx:key="*item" >{{item}}</view>
+        </view>
+        
+    </view>
+
+    <view class="canderbody">
+        <view class="canderleft">
+            <view class="calendar-item-left"  wx:for-items="{{times}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="canderright">
+            <view class='calendar-item' wx:for="{{days.col}}" wx:key="col" >
+             <view wx:for="{{item.row}}" wx:for-item="row" wx:key="{{row}}">
+               <view class="col">{{row.name}}</view>
+             </view>
+            </view>
+        </view>
+    
+    </view>
+
+</view>
+    </swiper-item>
+
+
+<swiper-item>
+    
+        <view class="cander">
+    <view class="candertop">
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weeks}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weekdays}}" wx:for-item="item" wx:key="*item" >{{item}}</view>
+        </view>
+        
+    </view>
+
+    <view class="canderbody">
+        <view class="canderleft">
+            <view class="calendar-item-left"  wx:for-items="{{times}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="canderright">
+            <view class='calendar-item' wx:for="{{days.col}}" wx:key="col" >
+             <view wx:for="{{item.row}}" wx:for-item="row" wx:key="{{row}}">
+               <view class="col">{{row.name}}</view>
+             </view>
+            </view>
+        </view>
+    
+    </view>
+
+</view>
+    </swiper-item>
+
+
+
+    <swiper-item>
+    
+        <view class="cander">
+    <view class="candertop">
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weeks}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weekdays}}" wx:for-item="item" wx:key="*item" >{{item}}</view>
+        </view>
+        
+    </view>
+
+    <view class="canderbody">
+        <view class="canderleft">
+            <view class="calendar-item-left"  wx:for-items="{{times}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="canderright">
+            <view class='calendar-item' wx:for="{{days.col}}" wx:key="col" >
+             <view wx:for="{{item.row}}" wx:for-item="row" wx:key="{{row}}">
+               <view class="col">{{row.name}}</view>
+             </view>
+            </view>
+        </view>
+    
+    </view>
+
+</view>
+    </swiper-item>
+
+
+</swiper> 
+
+
+
+
+</view>
+
+

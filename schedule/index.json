@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/index",
+    "product-window": "/components/product-window/index",
+    "weight": "/components/weight/index",
+    "authorize": "/components/authorize/authorize"
+  }
+}

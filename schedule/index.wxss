@@ -1,0 +1,94 @@
+/* pages/schedule/index.wxss */
+.container
+{
+  align-items:center;
+  padding: 30rpx; 
+}
+.today
+{
+  font-size: 10px;
+}
+.text{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.bnt{
+    margin:0px auto;
+    color:#fff;
+    font-size:28rpx;
+    margin-top:50rpx;
+  }
+  .keepBnt{
+  background: red;
+  width:80%;
+  height:86rpx;
+  border-radius:50rpx;
+  text-align:center;
+  line-height:86rpx;
+  font-size:38rpx;
+  color:#fff;
+  font-family:黑体;
+  }
+  .thisWeek
+  {
+    margin-top: 30rpx;
+  }
+.textWeek{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.cander{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.calendar-item {
+  width: 45px;
+  text-align: center;
+}
+.calendar-item-left {
+  width: 14%;
+  text-align: left;
+  height: 80rpx;
+}
+.calendar-item-top {
+  width: 14%;
+  text-align: center;
+  height: 40rpx;
+}
+.candertop-detail
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.candertop{
+  margin-left: 50rpx;
+}
+.canderbody
+{
+  display: flex;
+}
+.canderleft
+{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 30rpx;
+}
+.canderright
+{
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 20rpx;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+.col{
+  height: 80rpx;
+  border-left: 1px solid red;
+  border-top: 1px solid red;
+}
