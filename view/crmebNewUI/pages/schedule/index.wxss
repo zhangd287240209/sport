@@ -40,12 +40,11 @@
   margin-top: 30rpx;
 }
 .cander{
-  margin-top: 30rpx;
   display: flex;
   flex-direction: column;
 }
 .calendar-item {
-  width: 45px;
+  width: 80rpx;
   text-align: center;
 }
 .calendar-item-left {
@@ -54,7 +53,7 @@
   height: 80rpx;
 }
 .calendar-item-top {
-  width: 14%;
+  width: 80rpx;
   text-align: center;
   height: 40rpx;
 }
@@ -62,10 +61,10 @@
 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .candertop{
-  margin-left: 50rpx;
+  margin-left: 90rpx;
+  width: 560rpx;
 }
 .canderbody
 {
@@ -76,13 +75,13 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 30rpx;
+  width: 50rpx;
 }
 .canderright
 {
   flex-wrap: wrap;
   display: flex;
-  margin-left: 20rpx;
+  margin-left: 40rpx;
   border-right: 1px solid red;
   border-bottom: 1px solid red;
 }
@@ -91,4 +90,21 @@
   height: 80rpx;
   border-left: 1px solid red;
   border-top: 1px solid red;
+}
+.bottom
+{
+  margin-top: 50rpx; 
+  text-align: center;
+}
+.swiper-container
+{
+  margin-top: 30rpx; 
+}
+
+.txt{
+  
+}
+
+.item{
+  margin-left: 40rpx;
 }

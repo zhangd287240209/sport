@@ -20,8 +20,44 @@
         <progress percent="80" backgroundColor="blue" activeColor="red">
         </progress>
     </view>
-<swiper bindchange="itemChange" circular="true">
-    <swiper-item>
+
+
+<swiper bindchange="itemChange" circular="true" style="width:100%;height:{{height}}px;" class="swiper-container">
+    <swiper-item >
+
+        <view class="cander" id="canderid">
+    <view class="candertop">
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weeks}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="candertop-detail">
+            <view class='calendar-item-top' wx:for-items="{{weekdays}}" wx:for-item="item" wx:key="*item" >{{item}}</view>
+        </view>
+        
+    </view>
+
+    <view class="canderbody">
+        <view class="canderleft">
+            <view class="calendar-item-left"  wx:for-items="{{times}}" wx:for-item="item" wx:key="*item">{{item}}</view>
+        </view>
+        <view class="canderright">
+            <view class='calendar-item' wx:for="{{days.col}}" wx:key="col" >
+             <view wx:for="{{item.row}}" wx:for-item="row" wx:key="{{row}}">
+               <view class="col">
+               <view style="height:90%; width:100%; background-color:black; margin-top:10%;">{{row.name}}</view>
+                 
+               </view>
+             </view>
+            </view>
+        </view>
+    
+    </view>
+
+</view>
+    </swiper-item>
+
+
+<swiper-item >
     
         <view class="cander">
     <view class="candertop">
@@ -50,38 +86,6 @@
 
 </view>
     </swiper-item>
-
-
-<swiper-item>
-    
-        <view class="cander">
-    <view class="candertop">
-        <view class="candertop-detail">
-            <view class='calendar-item-top' wx:for-items="{{weeks}}" wx:for-item="item" wx:key="*item">{{item}}</view>
-        </view>
-        <view class="candertop-detail">
-            <view class='calendar-item-top' wx:for-items="{{weekdays}}" wx:for-item="item" wx:key="*item" >{{item}}</view>
-        </view>
-        
-    </view>
-
-    <view class="canderbody">
-        <view class="canderleft">
-            <view class="calendar-item-left"  wx:for-items="{{times}}" wx:for-item="item" wx:key="*item">{{item}}</view>
-        </view>
-        <view class="canderright">
-            <view class='calendar-item' wx:for="{{days.col}}" wx:key="col" >
-             <view wx:for="{{item.row}}" wx:for-item="row" wx:key="{{row}}">
-               <view class="col">{{row.name}}</view>
-             </view>
-            </view>
-        </view>
-    
-    </view>
-
-</view>
-    </swiper-item>
-
 
 
     <swiper-item>
@@ -117,7 +121,9 @@
 
 </swiper> 
 
-
+<view class="bottom">
+    祝大家身材越来越好！
+</view>
 
 
 </view>
